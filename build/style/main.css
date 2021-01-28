@@ -1,0 +1,51 @@
+.btn {
+  text-align: center;
+  width: fit-content;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+}
+
+.button-area {
+  margin: 1rem 0;
+}
+
+.btn-primary {
+  color: white;
+  border-radius: 50px;
+  background: #21295c;
+  box-shadow: currentColor;
+}
+.btn-primary:active {
+  border-radius: 50px;
+  background: #21295c;
+  box-shadow: inset 10px 10px 20px #11152e, inset -10px -10px 20px #323e8a;
+}
+
+.btn-secondary {
+  color: white;
+  border-radius: 50px;
+  background: #92140c;
+  box-shadow: 10px 10px 20px #490a06, -10px -10px 20px #db1e12;
+}
+.btn-secondary:active {
+  border-radius: 50px;
+  background: #92140c;
+  box-shadow: inset 10px 10px 20px #490a06, inset -10px -10px 20px #db1e12;
+}
+
+.home__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.home__hero--video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
