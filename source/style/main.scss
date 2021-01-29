@@ -1,18 +1,55 @@
 @import "csbuttons";
+@import "reset";
 
 .home__hero {
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    background: rgba(2, 71, 117, 0.767);
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
+
+    &--heading {
+        font-size: 48px;
+    }
 
     &--video {
         position: absolute;
         top: 0;
         left: 0;
-        
+        background-size: cover;
         
         min-width: 100%;
         min-height: 100%;
         z-index: -1;
     }
+}
+
+.services {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+
+    &__heading {
+        align-self: center;
+        font-size: 48px;
+        padding: 20px 0;
+    }
+
+    &__service {
+        display: flex;
+        padding: 100px 0;
+        justify-content: space-evenly;
+        color: blueviolet;
+
+        &--card {
+            
+            max-width: 20vw;
+        }
+    }
+
+
 }
