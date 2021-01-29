@@ -198,9 +198,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(2, 71, 117, 0.767);
+  background: rgba(0, 38, 63, 0.9);
   color: #fff;
-  height: 100vh;
+  margin-bottom: 100px;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -209,9 +210,9 @@ img {
 }
 .home__hero--video {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
