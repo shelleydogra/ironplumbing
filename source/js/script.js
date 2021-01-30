@@ -1,2 +1,2 @@
 var video = document.getElementById("bg-video");
-video.playbackRate = .65;
+video.playbackRate = .55;
