@@ -1,0 +1,26 @@
+// colors
+
+$clr-carnelian: #af1a1a;
+$clr-cobalt-blue: #1446a0;
+$clr-carolina-blue: #009ddc;
+
+$clr-platinum: #e8e9eb;
+$clr-xiketic: #170f11;
+
+
+
+$brand-clr: (
+    red: $clr-carnelian,
+    blue: $clr-cobalt-blue,
+    light-blue: $clr-carolina-blue,
+
+    dark: $clr-xiketic,
+    light: $clr-platinum
+);
+
+
+
+// Font Sizes
+$font-sm: 0.875rem; //14px
+$font-med: 1.125rem; //18px
+$font-lg: 1.375rem; //22px
