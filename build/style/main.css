@@ -214,8 +214,17 @@ button, .button {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  height: 89px;
+  background-color: transparent;
+}
+.nav__logo a {
+  display: flex;
+  align-self: center;
+}
+.nav__logo img {
+  max-width: 18rem;
 }
 .nav__menu > span {
   display: block;
@@ -231,6 +240,11 @@ button, .button {
 }
 .nav__cta-button {
   color: #e8e9eb;
+}
+
+.home__hero {
+  transform: translateY(-18rem);
+  z-index: -1;
 }
 
 .home__hero {
