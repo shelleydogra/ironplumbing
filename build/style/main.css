@@ -193,6 +193,29 @@ button, .button {
   cursor: pointer;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cinzel", serif;
+}
+
+h1, h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h3, h4 {
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+h5, h6 {
+  font-size: 0.5em;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
 @media (max-width: 63.9375em) {
   .hide-on-mobile {
     display: none;
@@ -324,8 +347,18 @@ button, .button {
   color: #170f11;
 }
 .services__service--card {
+  --card-width: 250px;
+  --card-height: calc(var(--card-width) * 1.618);
+  height: var(--card-height);
+  width: var(--card-width);
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 13px;
+  --card-top-height: calc(var(--card-height) * 0.382);
+  --card-bottom-height: calc(var(--card-height) * 0.618);
+  position: relative;
   display: grid;
-  grid-template-rows: calc();
+  grid-template-rows: calc(var(--card-top-height) * .36) calc(var(--card-top-height) * .27) calc(var(--card-top-height) * .36) var(--card-bottom-height);
   grid-template-columns: 1fr;
   grid-template-areas: "heading" "sub-heading" "art" "description";
   align-items: center;
@@ -333,20 +366,14 @@ button, .button {
   text-align: center;
   z-index: -3;
   margin: 2rem 0;
-  width: 250px;
-  height: calc(250px * 1.618);
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 13px;
-  position: relative;
   background: transparent;
 }
 .services__service--card::after {
   position: absolute;
   content: " ";
-  width: 250px;
-  height: calc(calc(250px * 1.618) * 0.618);
-  top: calc(calc(250px * 1.618) * 0.382);
+  width: var(--card-width);
+  height: var(--card-bottom-height);
+  top: var(--card-top-height);
   left: 0;
   right: 0;
   bottom: 0;
@@ -355,8 +382,8 @@ button, .button {
 .services__service--card::before {
   position: absolute;
   content: " ";
-  width: 250px;
-  height: calc(calc(250px * 1.618) * 0.382);
+  width: var(--card-width);
+  height: var(--card-top-height);
   top: 0;
   left: 0;
   right: 0;
@@ -380,8 +407,9 @@ button, .button {
 .services__service--card-sub-heading {
   grid-area: sub-heading;
 }
-.services__service--card-icon {
+.services__service--card-art {
   grid-area: art;
+  width: calc(var(--card-top-height)*.35);
 }
 .services__service--card-description {
   grid-area: description;
