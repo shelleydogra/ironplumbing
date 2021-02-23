@@ -193,6 +193,18 @@ button, .button {
   cursor: pointer;
 }
 
+@media (max-width: 63.9375em) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel", serif;
 }
@@ -214,18 +226,6 @@ h5, h6 {
 p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-}
-
-@media (max-width: 63.9375em) {
-  .hide-on-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 64em) {
-  .hide-on-desktop {
-    display: none;
-  }
 }
 
 .button {
@@ -268,6 +268,15 @@ p {
   color: #e8e9eb;
 }
 
+.footer {
+  background: #14449f;
+  background: radial-gradient(circle, #14449f 0%, #160e10 100%);
+  background: -moz-radial-gradient(circle, #14449f 0%, #160e10 100%);
+  background: -webkit-radial-gradient(circle, #14449f 0%, #160e10 100%);
+  height: 100vh;
+  color: #e8e9eb;
+  text-align: center;
+}
 .home__hero {
   height: 100vh;
   display: grid;
@@ -318,6 +327,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 .home__hero--video {
@@ -335,6 +345,7 @@ p {
   flex-direction: column;
   min-height: 50vh;
   align-items: center;
+  position: relative;
 }
 .services__heading {
   font-size: 48px;
@@ -345,6 +356,7 @@ p {
   flex-direction: column;
   padding: 3rem 0;
   color: #170f11;
+  position: relative;
 }
 .services__service--card {
   --card-width: 250px;
@@ -358,7 +370,7 @@ p {
   --card-bottom-height: calc(var(--card-height) * 0.618);
   position: relative;
   display: grid;
-  grid-template-rows: calc(var(--card-top-height) * .36) calc(var(--card-top-height) * .27) calc(var(--card-top-height) * .36) var(--card-bottom-height);
+  grid-template-rows: calc(var(--card-top-height) * .30) calc(var(--card-top-height) * .15) calc(var(--card-top-height) * .55) var(--card-bottom-height);
   grid-template-columns: 1fr;
   grid-template-areas: "heading" "sub-heading" "art" "description";
   align-items: center;
@@ -366,7 +378,6 @@ p {
   text-align: center;
   z-index: -3;
   margin: 2rem 0;
-  background: transparent;
 }
 .services__service--card::after {
   position: absolute;
@@ -414,6 +425,72 @@ p {
 .services__service--card-description {
   grid-area: description;
   color: #e8e9eb;
+}
+
+.home__testimonial {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(0.5fr, 1fr));
+  grid-template-areas: "title" "review";
+  align-items: center;
+  padding: 2em 0;
+  margin: 0 0.5em;
+}
+.home__testimonial--title {
+  grid-area: title;
+  justify-self: start;
+  margin: 1rem;
+}
+.home__testimonial--review {
+  grid-area: review;
+  background-color: #1446a0;
+  padding: 3rem 0;
+  color: #e8e9eb;
+  border-radius: 13px;
+  margin: 0 1em;
+}
+.home__testimonial--review p {
+  padding: 2em 1em;
+}
+.home__testimonial--img {
+  grid-area: review;
+  justify-self: flex-end;
+  align-self: flex-end;
+  transform: translateY(50%);
+}
+
+.home__cta {
+  background: url(../images/pipes.png);
+  background-size: cover;
+  height: 100vh;
+  color: #e8e9eb;
+}
+
+.social {
+  padding: 2em 0;
+}
+.social__heading {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0.5em;
+}
+.social__links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
+}
+.social__links--google a {
+  color: #34a853;
+}
+.social__links--yelp a {
+  color: #af0606;
+}
+.social__links--facebook a {
+  color: #3b5998;
+}
+.social__links--instagram a {
+  color: #c13584;
 }
 
 .wrapper {

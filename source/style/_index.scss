@@ -59,7 +59,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        // background: rgba($color: #000000, $alpha: 1.0);
+        background: rgba($color: #000000, $alpha: .5);
         z-index: -1;
     }
 
@@ -74,15 +74,6 @@
         min-height: 100%;
         z-index: -2;
 
-    //     &::before {
-    //         content: " ";
-    //         top: 0;
-    //         left: 0;
-    //         right: 0;
-    //         bottom: 0;
-    //         background: rgba(0, 0, 0, 0.836);
-    //         // z-index: 1;
-    //     }
     }
 }
 
@@ -92,6 +83,8 @@
     flex-direction: column;
     min-height: 50vh;
     align-items: center;
+    position: relative;
+
 
 
     &__heading {
@@ -100,28 +93,30 @@
     }
 
     &__service {
+
         
+      
         display: flex;
         flex-direction: column;
         // justify-content: space-around;
         padding: 3rem 0;
         
         color: map-get($map: $brand-clr, $key: dark);
-
+        position: relative;
+ 
         &--card {
             @include CSCard(250px);
-    
+            
             display: grid;
             // grid-template-rows: repeat(5, 1fr);
-            grid-template-rows: calc(var(--card-top-height) * .36) calc(var(--card-top-height) * .27) calc(var(--card-top-height) * .36) var(--card-bottom-height);
+            grid-template-rows: calc(var(--card-top-height) * .30) calc(var(--card-top-height) * .15) calc(var(--card-top-height) * .55) var(--card-bottom-height);
             grid-template-columns: 1fr;
             grid-template-areas:    "heading"
                                     "sub-heading"
                                     "art"
                                     "description"  
             ;
-
-
+      
 
             align-items: center;
             justify-items: center;
@@ -131,11 +126,12 @@
             z-index: -3;
             margin: 2rem 0;
             
-            background: transparent;
-
+            
+            
             &::before { //top 1/3 of the card
                 @include CSGlass-light;
                 z-index: -2;
+                
             }
             &::after { //bottom 2/3 of the card 
                 background-color: map-get($map: $brand-clr, $key: blue);
@@ -144,6 +140,7 @@
 
             &-heading {
                 grid-area: heading;
+                
             }
 
             &-sub-heading {
@@ -164,4 +161,107 @@
         }
     }
 
+}
+
+.home__testimonial {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat( auto-fill, minmax(.5fr, 1fr));
+    grid-template-areas:    "title"
+                            
+                            "review"
+    ;
+    
+    align-items: center;
+    padding: 2em 0;
+    margin: 0 .5em;
+
+    &--title {
+        grid-area: title;
+        justify-self: start;
+        margin: 1rem;
+        
+    }
+
+    &--review {
+        grid-area: review;
+        background-color: map-get($map: $brand-clr, $key: blue);
+        padding: 3rem 0;
+        color: map-get($map: $brand-clr, $key: light);
+        border-radius: 13px;
+        margin: 0 1em;
+        // align-self: baseline;
+        
+
+        p {
+            padding: 2em 1em ;
+            
+        }
+        
+        
+        
+        // &::before {
+        //     content: open-quote;
+        //     top: -2rem;
+        //     display: inline;
+        //     font-size: 4em;
+        // }
+
+    }
+
+    &--img {
+        grid-area: review;
+        justify-self: flex-end;
+        align-self: flex-end;
+        transform: translateY(50%);
+        
+    }
+}
+
+.home__cta {
+    background: url(../images/pipes.png);
+    background-size: cover;
+    height: 100vh;
+    color: map-get($map: $brand-clr, $key: light);
+
+    
+}
+
+.social {
+    padding: 2em 0;
+    
+
+    
+    &__heading {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 1em .5em;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 0;
+        
+        &--google {
+            a {
+                color: map-get($map: $google-clr, $key: green);
+            }
+        }
+        &--yelp {
+            a {
+                color: map-get($map: $yelp-clr, $key: red);
+            }
+        }
+        &--facebook {
+            a {
+                color: map-get($map: $facebook-clr, $key: blue);
+            }
+        }
+        &--instagram {
+            a {
+                color: map-get($map: $instagram-clr, $key: violet);
+            }
+        }
+    }
 }

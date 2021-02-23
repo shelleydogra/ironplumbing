@@ -2,12 +2,15 @@
 @import "csreset";
 @import "csglobals";
 @import "cscomponents";
+@import "colors";
 
 //local
 @import 'variables';
 @import 'globals';
+@import 'typography';
 @import 'components';
 @import 'nav';
+@import 'footer';
 
 //pages
 @import 'index';
@@ -17,5 +20,7 @@
     width: 100%;
     margin: 0 auto;
     max-width: 1500px;
+
 }
+
 
