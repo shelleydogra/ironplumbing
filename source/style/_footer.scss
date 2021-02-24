@@ -1,25 +1,51 @@
 .footer {
-background: hsla(219, 78%, 35%, 1);
+    background: hsla(219, 78%, 35%, 1);
 
-background: radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
+    background: radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
 
-background: -moz-radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
+    background: -moz-radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
 
-background: -webkit-radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
+    background: -webkit-radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
 
-height: 100vh;
+    height: 100vh;
 
-color: map-get($map: $brand-clr, $key: light);
-text-align: center;
+    color: map-get($map: $brand-clr, $key: light);
+    text-align: center;
 
-&__service {
-    
-    &--areas-heading {
+    &__service {
         
+        &--areas-heading {
+            
+        }
+        &--areas-text {
+        
+        }
     }
-    &--areas-text {
-       
+
+    //service--license
+
+    //service--warranty
+
+    //service--policy
+
+    //logo--large
+
+    &__logo--large {
+       img {
+           max-width: 90vw;
+       }
     }
+
+    //&__copyright
+
+
+
+
+
+
+
 }
 
+* {
+    outline: solid #e400d8 .5px;
 }

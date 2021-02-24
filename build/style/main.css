@@ -277,6 +277,14 @@ p {
   color: #e8e9eb;
   text-align: center;
 }
+.footer__logo--large img {
+  max-width: 90vw;
+}
+
+* {
+  outline: solid #e400d8 0.5px;
+}
+
 .home__hero {
   height: 100vh;
   display: grid;
