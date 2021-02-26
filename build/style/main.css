@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -288,6 +289,16 @@ p {
 .footer__service > * * a {
   font-size: 1.5em;
   padding-bottom: 1.1rem;
+}
+.footer__service--areas {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+.footer__service--services-list li {
+  text-transform: capitalize;
+}
+.footer__service--services-list li::before {
+  content: "• ";
 }
 .footer__service--warranty {
   font-size: 0.75em;

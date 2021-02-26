@@ -24,7 +24,21 @@
             }
         }
         //service--areas
+        &--areas {
+            margin: 0 auto;
+            max-width: 90vw;
+        }
         //service--services
+        &--services {
+            &-list {
+                li {
+                    text-transform: capitalize;
+                    &::before {
+                        content: "\2022  ";
+                    }
+                }
+            }
+        }
         //service--contact
     }
 
