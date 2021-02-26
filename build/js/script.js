@@ -1,1 +1,1 @@
-var video=document.getElementById("bg-video");video.playbackRate=.55;
+!function(){"use strict";document.addEventListener("DOMContentLoaded",(function(){var cy=document.getElementById("current-year"),year=(new Date).getFullYear();cy.innerHTML=year}))}();var video=document.getElementById("bg-video");video.playbackRate=.55;

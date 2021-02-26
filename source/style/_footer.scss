@@ -1,36 +1,60 @@
 .footer {
     background: hsla(219, 78%, 35%, 1);
-
     background: radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
-
     background: -moz-radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
-
     background: -webkit-radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
 
-    height: 100vh;
+    > * {
+        padding-bottom: 2em;
+    }
 
     color: map-get($map: $brand-clr, $key: light);
     text-align: center;
 
     &__service {
-        
-        &--areas-heading {
-            
+        > * {
+            padding-bottom: 1rem;
         }
-        &--areas-text {
-        
+
+        > * * {
+            color: map-get($map: $brand-clr, $key: light);
+            a {
+                font-size: 1.5em;
+                padding-bottom: 1.1rem;
+            }
         }
+        //service--areas
+        //service--services
+        //service--contact
     }
 
     //service--license
 
     //service--warranty
+    &__service--warranty {
+        font-size: .75em;
+    }
 
     //service--policy
+    &__service--policy {
+        margin: 0 auto;
+        width: 85vw;
+        &-heading {
+            h3 {
+                font-size: 1.1em;
+            }
+            padding-bottom: .21rem;
+        }
+        &-text {
+            p {
+                font-size: .7em;
+            }
+        }
+    }
 
     //logo--large
-
     &__logo--large {
+        
        img {
            max-width: 90vw;
        }
@@ -38,14 +62,16 @@
 
     //&__copyright
 
+    &__copyright {
+        
+        //CS font
+        @include CSCopyrightFont();
+    }
 
 
 
 
 
 
-}
 
-* {
-    outline: solid #e400d8 .5px;
 }
