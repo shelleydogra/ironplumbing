@@ -59,7 +59,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba($color: #000000, $alpha: .5);
+        @include CSGlass-dark;
         z-index: -1;
     }
 
@@ -230,32 +230,31 @@
     position: relative;
 
 
-
     @include CSBefore ("../images/pipes.png");
 
 
     background-color: rgba(map-get($map: $brand-clr, $key: blue), .85);
     color: map-get($map: $brand-clr, $key: light);
 
-    
-    
-
-
-    > * {
-        padding: 2rem;
-    }
-
-    &--email {
-        > * {
-            font-size: 1.1em
+    > * * {
+        a {
+            font-size: 1.2em;
+            transition: color 200ms ease-in-out;
+            &:hover {
+                color: map-get($map: $brand-clr, $key: light-blue);
+            }
         }
+        
+        
+        padding: 2rem;
+        color: map-get($map: $brand-clr, $key: light);
     }
 
     
 }
 
 .social {
-    padding: 2em 0;
+    // padding: 2em 0;
     
 
     
