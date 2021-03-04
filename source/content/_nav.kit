@@ -1,3 +1,5 @@
+
+
 <nav class="nav">
 
     <div class="nav__logo">
@@ -7,16 +9,29 @@
     </div>
 
 
+
+
+
+
+    <div class="nav__links hide-on-mobile">
+        <a class=" <!-- $cs_home?  -->" href="index.html">Home</a>
+        <a class="<!-- $cs_services?  -->" href="services.html">Services</a>
+        <a class="<!-- $cs_contact?  -->" href="contact.html">Contact</a>
+    </div>
+
     <a href="#" id="btnHamburger" class="nav__menu hide-on-desktop">
         <span></span>
         <span></span>
         <span></span>
     </a>
 
-    <div class="nav__links hide-on-mobile">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+    <div id="overlay" class="overlay hidden">
+        <div class="overlay__links">
+            <img src="<!-- $cs_logo-small -->" alt="">
+            <a class=" <!-- $cs_home?  -->" href="index.html">Home</a>
+            <a class=" <!-- $cs_services?  -->" href="services.html">Services</a>
+            <a class="<!-- $cs_contact?  -->" href="contact.html">Contact</a>
+        </div>
     </div>
 
     <a href="#" type="button" class="button nav__cta-button hide-on-mobile">Call Us</a>
