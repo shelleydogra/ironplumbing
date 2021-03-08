@@ -5,7 +5,7 @@
     background: -webkit-radial-gradient(circle, hsla(219, 78%, 35%, 1) 0%, hsla(345, 21%, 7%, 1) 100%);
 
     > * {
-        padding-bottom: 2em;
+        padding-bottom: 2.25em;
     }
 
     color: map-get($map: $brand-clr, $key: light);
@@ -13,7 +13,7 @@
 
     &__service {
         > * {
-            padding-bottom: 1rem;
+            padding-bottom: 1.5rem;
         }
 
         > * * {
@@ -23,6 +23,9 @@
                 padding-bottom: 1.1rem;
             }
         }
+
+
+
         //service--areas
         &--areas {
             margin: 0 auto;
@@ -40,19 +43,47 @@
             }
         }
         //service--contact
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: center;
+            // padding-left: 1rem;
+            // padding-right: 1rem;
+
+            > * {
+                width:  33%;
+            }
+
+        }
     }
 
     //service--license
+    &__service--license {
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: center;
+            > * {
+                padding: 0 .34rem;
+            }
+        }
+    }
 
     //service--warranty
     &__service--warranty {
         font-size: .75em;
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: center;
+            > * {
+                padding: 0 .34rem;
+            }
+        }
     }
 
     //service--policy
     &__service--policy {
         margin: 0 auto;
-        width: 85vw;
+        max-width: 85vw;
         &-heading {
             h3 {
                 font-size: 1.1em;

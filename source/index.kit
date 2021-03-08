@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- $cs_page-title = | Home -->
     <!-- @import content/head.kit -->
 </head>
 <body>
 
     <div class="wrapper">
+
+        <!-- ----- Active links classes ----- -->
         <!-- $cs_home = active -->
+
+        <!-- ----- Variables ----- -->
+        <!-- @import content/company_info/variables.kit -->
+
+
+
         <header>
             <!-- $cs_logo = images/logo-round.svg -->
             <!-- $cs_logo-large = images/logo-white.svg-->
@@ -67,17 +76,17 @@
 
         <div class="home__cta">
             <div class="home__cta--heading"><h1>call us today for all of your plumbing needs</h1></div>
-            <div class="home__cta--phone"><h2><a href="tel:6307761907">(630) 776-1907</a></h2></div>
-            <div class="home__cta--email"><h2><a href="mailto:plumber@ironplumbing.net">Email Us</a></h2></div>
+            <div class="home__cta--phone"><h2><a href="tel:<!--$phone-->"> <!-- $phone --> </a></h2></div>
+            <div class="home__cta--email"><h2><a href="mailto:<!-- $email -->">Email Us</a></h2></div>
         </div>
 
         <div class="social">
             <div class="social__heading"><h1>connect with us at your favorite social media</h1></div>
             <div class="social__links">
-                <div class="social__links--google"><a href=""><i class="fab fa-google fa-3x"></i></a></div>
-                <div class="social__links--yelp"><a href=""><i class="fab fa-yelp fa-3x"></i></a></div>
-                <div class="social__links--facebook"><a href=""><i class="fab fa-facebook fa-3x"></i></a></div>
-                <div class="social__links--instagram"><a href=""><i class="fab fa-instagram fa-3x"></i></a></div>
+                <div class="social__links--google"><a href="<!-- $google-link -->"><i class="fab fa-google fa-3x"></i></a></div>
+                <div class="social__links--yelp"><a href="<!-- $yelp-link -->"><i class="fab fa-yelp fa-3x"></i></a></div>
+                <div class="social__links--facebook"><a href="<!-- $facebook-link -->"><i class="fab fa-facebook fa-3x"></i></a></div>
+                <div class="social__links--instagram"><a href="<!-- $instagram-link -->"><i class="fab fa-instagram fa-3x"></i></a></div>
             </div>
             <div class="social__bbb"></div>
         </div>

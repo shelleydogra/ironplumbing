@@ -9,14 +9,8 @@
     </div>
 
 
-
-
-
-
     <div class="nav__links hide-on-mobile">
-        <a class=" <!-- $cs_home?  -->" href="index.html">Home</a>
-        <a class="<!-- $cs_services?  -->" href="services.html">Services</a>
-        <a class="<!-- $cs_contact?  -->" href="contact.html">Contact</a>
+        <!-- @import links.kit -->
     </div>
 
     <a href="#" id="btnHamburger" class="nav__menu hide-on-desktop">
@@ -25,15 +19,13 @@
         <span></span>
     </a>
 
-    <div id="overlay" class="overlay hidden">
+    <div id="overlay" class="overlay hidden hide-on-desktop">
         <div class="overlay__links">
             <img src="<!-- $cs_logo-small -->" alt="">
-            <a class=" <!-- $cs_home?  -->" href="index.html">Home</a>
-            <a class=" <!-- $cs_services?  -->" href="services.html">Services</a>
-            <a class="<!-- $cs_contact?  -->" href="contact.html">Contact</a>
+            <!-- @import links.kit -->
         </div>
     </div>
 
-    <a href="#" type="button" class="button nav__cta-button hide-on-mobile">Call Us</a>
+    <a href="tel:<!-- $phone -->" type="button" class="button nav__cta-button hide-on-mobile"> <!-- $phone --> </a>
 
 </nav>

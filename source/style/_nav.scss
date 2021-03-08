@@ -1,90 +1,17 @@
-@mixin links-style {
-    // a:not(:last-child) {
-    //     padding: 0 1.3rem 0 0;
-    // }
- 
-    a {            
-        padding: 0 1.3rem 0 0;
-        transition: all 300ms ease-in-out;
-        &:hover {
-            color: map-get($map: $brand-clr, $key: red);
-        }
-    }
-}
-
-// .overlay {
-//     position: fixed;
-//     // background-color: map-get($map: $brand-clr, $key: blue);
-//     @include CSGlass-dark();
-//     // top: $size-navbar-height;
-//     top: 0;
-//     right: 13vw;
-//     left: 13vw;
-//     border-radius: 0 0 13px 13px;
-//     // height: 50vh;
-//     color: map-get($map: $brand-clr, $key: light);
-//     transition: all 300ms ease-in-out;
-//     transform: rotate(360deg);
-//     height: auto;
-
-//     &__links {
-//         @include links-style();
-
-//         display: flex;
-//         flex-direction: column;
-//         text-align: center;
-
-//         a {
-//             padding: 0 0 1.25rem 0 ;
-
-//             &.active {
-//                     color: map-get($map: $brand-clr, $key: red);
-//             }
-//         }
-        
-
-//         img {
-//             transform: rotate(900deg);
-//             transition: all 300ms ease-in-out;
-//             width: 5rem;
-//             margin: 0 auto;
-//             padding-top: $size-navbar-height/2;
-//             padding-bottom: $size-navbar-height/2;
-//         }
-
-//     }
-// }
-
-
-
 .nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: $size-navbar-height;
-    // background-color: transparent;
     background-color: map-get($map: $brand-clr, $key: dark);
-
-    a, a:visited, a:hover {
-        font-size: $font-lg;
-        color: map-get($map: $brand-clr, $key: light);
-
-        &.active {
-            color: map-get($map: $brand-clr, $key: light-blue);
-    }
-
-    }
 
     .overlay {
         position: fixed;
-        // background-color: map-get($map: $brand-clr, $key: blue);
         @include CSGlass-dark();
-        // top: $size-navbar-height;
         top: 0;
-        right: 13vw;
-        left: 13vw;
+        right: 8vw;
+        left: 8vw;
         border-radius: 0 0 13px 13px;
-        // height: 50vh;
         color: map-get($map: $brand-clr, $key: light);
         transition: all 300ms ease-in-out;
         transform: rotate(360deg);
@@ -99,13 +26,8 @@
     
             a {
                 padding: 0 0 1.5rem 0 ;
-    
-                // &.active {
-                //         color: map-get($map: $brand-clr, $key: blue);
-                // }
             }
             
-    
             img {
                 transform: rotate(900deg);
                 transition: all 300ms ease-in-out;
@@ -114,7 +36,6 @@
                 padding-top: $size-navbar-height/2;
                 padding-bottom: $size-navbar-height/2;
             }
-    
         }
     }
     
@@ -125,7 +46,6 @@
             align-self: center;
         }
         img {
-            // max-width: 18rem;
             max-width: $size-nav-height;
         }
     }
