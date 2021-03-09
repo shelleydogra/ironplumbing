@@ -15,6 +15,7 @@
 
 .hidden {
     opacity: 0;
+    z-index: -99;
 }
 
 @mixin links-style {

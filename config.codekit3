@@ -34,6 +34,14 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/source\/content\/_favicon.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/content\/_favicon.html",
+      "oF" : 0
+    },
     "\/source\/content\/_footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -295,6 +303,20 @@
       "oA" : 0,
       "oAP" : "\/build\/services.html",
       "oF" : 0
+    },
+    "\/source\/style\/_animations.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/style\/_animations.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/source\/style\/_components.scss" : {
       "aP" : 0,
