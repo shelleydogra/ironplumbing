@@ -158,6 +158,16 @@
             &-description {
                 grid-area: description;
                 color: map-get($map: $brand-clr, $key: light);
+
+                ul {
+                    li {
+                        padding-bottom: .3em;
+                        text-transform: capitalize;
+                        &::before {
+                            content: ' \2022  ';
+                        }
+                    }
+                }
             }
 
             

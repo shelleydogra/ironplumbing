@@ -589,6 +589,13 @@ p {
   grid-area: description;
   color: #e8e9eb;
 }
+.services__service--card-description ul li {
+  padding-bottom: 0.3em;
+  text-transform: capitalize;
+}
+.services__service--card-description ul li::before {
+  content: " • ";
+}
 @media (min-width: 64em) {
   .services__service {
     flex-direction: row;
