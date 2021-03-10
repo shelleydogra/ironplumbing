@@ -35,7 +35,7 @@
       "uCM" : 0
     },
     "\/source\/contact.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
@@ -702,7 +702,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 637022266.25631297
+    "lastBuiltDate" : 637029294.96468794
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
