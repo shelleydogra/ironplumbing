@@ -7,21 +7,21 @@
         
         <!-- dependencies -->
         
-        <script src="https://kit.fontawesome.com/21058703fb.js?ckcachebust=637047488" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style/main.css?ckcachebust=168CF6EA4943D2CD5F572B6A5906328D">
+        <script src="https://kit.fontawesome.com/21058703fb.js?ckcachebust=637362737" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/main.css?ckcachebust=DF8B527D7A342CB77DBE56F6AB162C0D">
         
         <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=837E565DF13F4066ABF1CBFD819FE942"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=1E32C120D969BC7B32E552D638B6CCCF"> 
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
         
         <!-- favicon -->
         
         
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=637047488">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?ckcachebust=637047488">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?ckcachebust=637047488">
-        <link rel="manifest" href="/site.webmanifest?ckcachebust=637047488">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg?ckcachebust=637047488" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=637362737">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?ckcachebust=637362737">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?ckcachebust=637362737">
+        <link rel="manifest" href="/site.webmanifest?ckcachebust=637362737">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg?ckcachebust=637362737" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 </head>
@@ -61,7 +61,7 @@
                                                         <span></span>
                                                     </a>
                                                 
-                                                    <div id="overlay" class="overlay hidden hide-on-desktop scale-up-from-top">
+                                                    <div id="overlay" class="overlay hidden hide-on-desktop">
                                                         <div class="overlay__links">
                                                             <img src="images/logo-round.svg" alt="">
                                                             <a class=" active" href="index.html">Home</a>
@@ -93,8 +93,8 @@
             <div class="services__heading">Services</div>
             <div class="services__service">
                 <div class="services__service--card">
-                    <div class="services__service--card-heading"><h1>Plumbing</h1></div>
-                    <div class="services__service--card-sub-heading"><h3>General Plumbing</h3></div>
+                    <div class="services__service--card-heading"><h1> plumbing </h1></div>
+                    <div class="services__service--card-sub-heading"><h3>general plumbing</h3></div>
                     <img src="images/faucet-blue-solid.png" alt="Card Logo" class="services__service--card-art">
                     <div class="services__service--card-description"> <!DOCTYPE html>
                     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -118,8 +118,8 @@
                      </div>
                 </div>
                 <div class="services__service--card">
-                    <div class="services__service--card-heading"><h1>Installation</h1></div>
-                    <div class="services__service--card-sub-heading"><h3>And Replacement</h3></div>
+                    <div class="services__service--card-heading"><h1> installation </h1></div>
+                    <div class="services__service--card-sub-heading"><h3> and replacement </h3></div>
                     <img src="images/wrench-blue-solid.png" alt="Card Logo" class="services__service--card-art">
                     <div class="services__service--card-description"> <!DOCTYPE html>
                     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -144,8 +144,8 @@
                      </div>
                 </div>
                 <div class="services__service--card">
-                    <div class="services__service--card-heading"><h1>Repair</h1></div>
-                    <div class="services__service--card-sub-heading"><h3>And Maintenance</h3></div>
+                    <div class="services__service--card-heading"><h1>repair</h1></div>
+                    <div class="services__service--card-sub-heading"><h3>and maintenance</h3></div>
                     <img src="images/wrench-blue-outline.png" alt="Card Logo" class="services__service--card-art">
                     <div class="services__service--card-description"> <!DOCTYPE html>
                     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -198,6 +198,32 @@
                 <div class="social__links--instagram"><a href="https://www.instagram.com"><i class="fab fa-instagram fa-3x"></i></a></div>
             </div>
             <div class="social__bbb"></div>
+        </div>
+
+        <div>
+
+            <form name="contact" method="POST" data-netlify="true" >
+                <p>
+                  <label>Your Name: <input type="text" name="name" /></label>   
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label>Your Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                  </select></label>
+                </p>
+                <p>
+                  <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+              
+
         </div>
 
         <footer class="footer">
