@@ -46,50 +46,68 @@ let data = [{
     "reasons" : "There are numerous reasons to consider service"
     },
     "info": {
-        "phone": "(630) 776-1907",
+        "phone": "+1(630)776-1907",
         "email": "plumber@ironplumber.net"
     }
+   
 }
 ];
     
 document.addEventListener('DOMContentLoaded', function() {
-    // var phone = document.getElementById('phone');
 
     var phone = document.querySelectorAll('.wrapper #phone');
 
-    // var geo = document.getElementById('geo');
-
-    // var geoc = document.getElementsByClassName('geoc');
-
-    // var phone = document.querySelectorAll('.wrapper #phone');
-    // const geoc = document.querySelectorAll('.wrapper #geoc');
-
-    // phone.innerHTML = "hello";
-
-    // geoc.innerHTML = (data[0].phrases.goodhands);
-    
-    // phone.innerHTML = data[0].info.phone;
     for (let i = 0; i < phone.length; i++) {
-        //  geoc[i].innerHTML = data[0].phrases.goodhands;
-        // geoc[i].innerHTML = buildSentence(data[0].phrases.goodhands, data[0].info.phone);
         phone[i].innerHTML = data[0].info.phone;
-
     }
 
-    // geoc[2].innerHTML = (data[0].phrases.goodhands);
-    
-    // phone.innerHTML = (data[0].info.phone);
+    //tel link
+    var telLink = document.querySelectorAll('.wrapper #tel-link');
+    document.querySelectorAll('.wrapper #tel-link').innerHTML = "Phone is: ";
+
+    for (let i = 0; i < telLink.length; i++) {
+        telLink[i].innerHTML =  '<a href=tel:"'+ cleanPhoneNumber(data[0].info.phone) +'">'+ formatPhoneNumber(data[0].info.phone) + '</a>  ';
+    }
+
+    var email = document.querySelectorAll('.wrapper #email');
+    for (let i = 0; i < email.length; i++) {
+         email[i].innerHTML = data[0].info.email;
+    }
+    var emailLink = document.querySelectorAll('.wrapper #email-link');
+    for (let i = 0; i < emailLink.length; i++) {
+        emailLink[i].innerHTML = '<a href=mailto:"'+ data[0].info.email +'">'+ "Email Us" + '</a> ';
+    }
+
 });
 
+let formatPhoneNumber = (str) => {
+    //Filter only numbers from the input
+    let cleaned = ('' + str).replace(/\D/g, '');
+    console.log(cleaned);
+    //Check if the input is of correct
+    let match = cleaned.match(/^(1|)?(\d{3})(\d{3})(\d{4})$/);
+    console.log(match);
+    if (match) {
 
+      let intlCode = (match[1] ? '+1 ' : '')
+      return ['(', match[2], ') ', match[3], '-', match[4]].join('')
+    }
+    
+    return null;
+  }
 
+  let cleanPhoneNumber = (str) => {
+    //Filter only numbers from the input
+    let cleaned = ('' + str).replace(/\D/g, '');
+    console.log(cleaned);
+    //Check if the input is of correct
+    let match = cleaned.match(/^(1|)?(\d{3})(\d{3})(\d{4})$/);
+    console.log(match);
+    if (match) {
 
-
-// function buildSentence (phrase, variable) {
-
-//     // let p = JSON.stringify(phrase);
-
-
-
-//     return variable;
-// }
+      let intlCode = (match[1] ? '+1' : '')
+      return [intlCode, match[2],  match[3], match[4]].join('')
+    }
+    
+    return null;
+  }

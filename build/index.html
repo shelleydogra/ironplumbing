@@ -7,21 +7,21 @@
         
         <!-- dependencies -->
         
-        <script src="https://kit.fontawesome.com/21058703fb.js?ckcachebust=638229743" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style/main.css?ckcachebust=DF8B527D7A342CB77DBE56F6AB162C0D">
+        <script src="https://kit.fontawesome.com/21058703fb.js?ckcachebust=638667084" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/main.css?ckcachebust=A8DDB9AD6FF6F33B2C19AD67BC4F0BB0">
         
         <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=2485576BBFCA2E38D895B32356B768A5"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=9D4817A7FA5941617212B6AB8FA18C95"> 
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
         
         <!-- favicon -->
         
         
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=638229743">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?ckcachebust=638229743">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?ckcachebust=638229743">
-        <link rel="manifest" href="/site.webmanifest?ckcachebust=638229743">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg?ckcachebust=638229743" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=638667084">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?ckcachebust=638667084">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?ckcachebust=638667084">
+        <link rel="manifest" href="/site.webmanifest?ckcachebust=638667084">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg?ckcachebust=638667084" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 </head>
@@ -183,11 +183,53 @@
             </div>
         </div>
 
-        <div class="home__cta">
+        <!-- <div class="home__cta">
             <div class="home__cta--heading"><h1>call us today for all of your plumbing needs</h1></div>
-            <div class="home__cta--phone"><h2><a href="tel:(630) 776-1907"> (630) 776-1907 </a></h2></div>
+            <div class="home__cta--phone"><h2><a id="phone" href="tel:(630) 776-1907"> 777 </a></h2></div>
             <div class="home__cta--email"><h2><a href="mailto:plumber@ironplumbing.net">Email Us</a></h2></div>
+        </div> -->
+
+        <!-- <!DOCTYPE html>
+        <html>
+        <head>
+        	<title>GeeksforGeeks</title>
+        	<script>
+        		var val = 55;
+        	</script>
+        </head>
+        	<body>				
+        		
+        		Link to <a href="https://www.google.com/" onclick="location.href=this.href+'?xyz='+val;return false;">Google</a>
+        		
+        	</body>
+        </html> -->
+        
+        <!-- <!DOCTYPE html>
+        <html>
+        <head>
+            <title>GeeksforGeeks</title>
+            <script>
+                var val = 55;
+            </script>
+        </head>
+            <body>                 
+                Link to 
+                <script>
+                    var loc = "https://www.google.com/?xyz="+val;
+                    document.write('<a href="' + loc + '">Google</a>');
+                </script>
+            </body>
+        </html> -->
+        
+        <div class="cta">
+            <div class="cta__heading"><h1>call us today for all of your plumbing needs</h1></div>
+            <!-- <div class="cta__phone"><h2><a id="phone" href="tel:(630) 776-1907"> 777 </a></h2></div> -->
+            <div class="cta__phone"><h2 id="tel-link"></h2></div>
+            <!-- <div class="cta__email"><h2><a href="mailto:plumber@ironplumbing.net">Email Us</a></h2></div> -->
+            <div class="cta__email"><h2 id="email-link"></h2></div>
+            
         </div>
+        
 
         <div class="social">
             <div class="social__heading"><h1>connect with us at your favorite social media</h1></div>
@@ -273,23 +315,9 @@
     </div> <!-- wrapper -->
 
     
-    <script src="js/script.js?ckcachebust=7FBF2781378EF865E320F0B90B147548" defer></script>
+    <script src="js/script.js?ckcachebust=063B7BF004E196348174DE5A9E6E87E3" defer></script>
     <script src="js/video.js?ckcachebust=9ECD4725579356D5E3A509E56FACCC3E" defer></script>
 
-
-
-
-    <!-- Firebase -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="/__/firebase/8.3.0/firebase-app.js?ckcachebust=638229743"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.3.0/firebase-analytics.js?ckcachebust=638229743"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js?ckcachebust=638229743"></script>
-    <!-- Firebase -->
 
 
 </body>

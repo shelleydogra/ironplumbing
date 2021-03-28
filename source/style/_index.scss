@@ -196,7 +196,6 @@
     align-items: center;
     padding: 2em 0;
     margin: 0 .5em;
-
     &--title {
         grid-area: title;
         justify-self: start;
@@ -234,45 +233,46 @@
         grid-area: review;
         justify-self: flex-end;
         align-self: flex-end;
-        transform: translateY(50%);
+        transform: translateY(45%);
+        z-index: 1;
         
     }
 }
 
-.home__cta {
-    margin: 3rem 0 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 2rem 0;
-    position: relative;
+// .home__cta {
+//     margin: 3rem 0 0;
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     text-align: center;
+//     padding: 2rem 0;
+//     position: relative;
 
 
-    @include CSBefore ("../images/pipes.png");
+//     @include CSBefore ("../images/pipes.png");
 
 
-    background-color: rgba(map-get($map: $brand-clr, $key: blue), .85);
-    color: map-get($map: $brand-clr, $key: light);
+//     background-color: rgba(map-get($map: $brand-clr, $key: blue), .85);
+//     color: map-get($map: $brand-clr, $key: light);
 
-    > * * {
-        a {
-            font-size: 1.2em;
-            transition: color 200ms ease-in-out;
-            &:hover {
-                color: map-get($map: $brand-clr, $key: light-blue);
-            }
-        }
+//     > * * {
+//         a {
+//             font-size: 1.2em;
+//             transition: color 200ms ease-in-out;
+//             &:hover {
+//                 color: map-get($map: $brand-clr, $key: light-blue);
+//             }
+//         }
         
         
-        padding: 2rem;
-        color: map-get($map: $brand-clr, $key: light);
-    }
+//         padding: 2rem;
+//         color: map-get($map: $brand-clr, $key: light);
+//     }
 
     
-}
+// }
 
 .social {
     padding: 4rem 0;

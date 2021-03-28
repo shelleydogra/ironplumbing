@@ -435,6 +435,41 @@ p {
   font-size: 0.55em;
 }
 
+.cta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  background-color: rgba(20, 70, 160, 0.85);
+  color: #e8e9eb;
+}
+.cta::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/pipes.png") no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.cta > * * {
+  padding: 2rem;
+  color: #e8e9eb;
+}
+.cta > * * a {
+  font-size: 1.2em;
+  transition: color 200ms ease-in-out;
+}
+.cta > * * a:hover {
+  color: #009ddc;
+}
+
 .home__hero {
   max-height: 100vh;
   display: grid;
@@ -630,43 +665,8 @@ p {
   grid-area: review;
   justify-self: flex-end;
   align-self: flex-end;
-  transform: translateY(50%);
-}
-
-.home__cta {
-  margin: 3rem 0 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  padding: 2rem 0;
-  position: relative;
-  background-color: rgba(20, 70, 160, 0.85);
-  color: #e8e9eb;
-}
-.home__cta::before {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("../images/pipes.png") no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-.home__cta > * * {
-  padding: 2rem;
-  color: #e8e9eb;
-}
-.home__cta > * * a {
-  font-size: 1.2em;
-  transition: color 200ms ease-in-out;
-}
-.home__cta > * * a:hover {
-  color: #009ddc;
+  transform: translateY(45%);
+  z-index: 1;
 }
 
 .social {

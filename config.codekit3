@@ -15,14 +15,6 @@
       "oAP" : "\/build\/build",
       "oF" : 0
     },
-    "\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/build\/package-lock.json",
-      "oF" : 0,
-      "oO" : 0,
-      "oS" : 1
-    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -48,6 +40,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/contact.html",
+      "oF" : 0
+    },
+    "\/source\/content\/_cta.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/content\/_cta.html",
       "oF" : 0
     },
     "\/source\/content\/_favicon.kit" : {
@@ -612,6 +612,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/source\/style\/_cta.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/style\/_cta.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/source\/style\/_debug.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -759,7 +773,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 638229744.141855
+    "lastBuiltDate" : 638666036.17322195
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -2178,7 +2192,7 @@
     },
     "esLintSourceType" : 0,
     "externalServerAddress" : "http:\/\/localhost:8888",
-    "gitIgnoreBuildFolder" : 1,
+    "gitIgnoreBuildFolder" : 0,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
     "jsHintFlags2" : {
