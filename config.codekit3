@@ -15,6 +15,14 @@
       "oAP" : "\/build\/build",
       "oF" : 0
     },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/build\/package-lock.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -119,6 +127,14 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
+    },
+    "\/source\/content\/company_info\/_phrases.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/build\/content\/company_info\/_phrases.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
     },
     "\/source\/content\/company_info\/_repair-list.md" : {
       "cB" : 0,
@@ -360,6 +376,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/source\/images\/faucet-drip.png" : {
+      "ft" : 32768,
+      "iS" : 970269,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/faucet-drip.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/lines.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -507,7 +536,7 @@
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
-      "mi" : 1,
+      "mi" : 0,
       "oA" : 0,
       "oAP" : "\/build\/js\/script.js",
       "oF" : 0,
@@ -564,6 +593,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/style\/_components.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/style\/_contact.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/style\/_contact.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -639,6 +682,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/source\/style\/_services.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/style\/_services.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/source\/style\/_typography.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -702,7 +759,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 637029294.96468794
+    "lastBuiltDate" : 638229744.141855
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

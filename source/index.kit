@@ -41,25 +41,25 @@
             <div class="services__heading">Services</div>
             <div class="services__service">
                 <div class="services__service--card">
-                    <div class="services__service--card-heading"><h1>Plumbing</h1></div>
-                    <div class="services__service--card-sub-heading"><h3>General Plumbing</h3></div>
+                    <div class="services__service--card-heading"><h1> <!-- $plumbing-list-heading --> </h1></div>
+                    <div class="services__service--card-sub-heading"><h3><!-- $plumbing-list-subheading --></h3></div>
                     <img src="images/faucet-blue-solid.png" alt="Card Logo" class="services__service--card-art">
                     <div class="services__service--card-description"> <!-- @compile 'content/company_info/general-plumbing-list.md'--> </div>
                 </div>
                 <div class="services__service--card">
-                    <div class="services__service--card-heading"><h1>Installation</h1></div>
-                    <div class="services__service--card-sub-heading"><h3>And Replacement</h3></div>
+                    <div class="services__service--card-heading"><h1> <!-- $installation-list-heading --> </h1></div>
+                    <div class="services__service--card-sub-heading"><h3> <!-- $installation-list-subheading --> </h3></div>
                     <img src="images/wrench-blue-solid.png" alt="Card Logo" class="services__service--card-art">
                     <div class="services__service--card-description"> <!-- @compile 'content/company_info/installation-list.md' --> </div>
                 </div>
                 <div class="services__service--card">
-                    <div class="services__service--card-heading"><h1>Repair</h1></div>
-                    <div class="services__service--card-sub-heading"><h3>And Maintenance</h3></div>
+                    <div class="services__service--card-heading"><h1><!-- $repair-list-heading --></h1></div>
+                    <div class="services__service--card-sub-heading"><h3><!-- $repair-list-subheading --></h3></div>
                     <img src="images/wrench-blue-outline.png" alt="Card Logo" class="services__service--card-art">
                     <div class="services__service--card-description"> <!-- @compile 'content/company_info/repair-list.md' --> </div>
                 </div>
             </div>
-            
+        
         </div>
 
         <div class="home__testimonial">
@@ -91,6 +91,7 @@
             <div class="social__bbb"></div>
         </div>
 
+
         <!-- @import content/footer.kit -->
         
 
@@ -99,5 +100,22 @@
     
     <script src="js/script.js" defer></script>
     <script src="js/video.js" defer></script>
+
+
+
+
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.3.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.3.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <!-- Firebase -->
+
+
 </body>
 </html>

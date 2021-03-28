@@ -10,11 +10,11 @@
         position: fixed;
         @include CSGlass-dark();
         top: 0;
-        right: 8vw;
-        left: 8vw;
+        right: 5vw;
+        left: 5vw;
         border-radius: 0 0 13px 13px;
         color: map-get($map: $brand-clr, $key: light);
-        transition: all 300ms ease-in-out;
+        transition: all 100ms ease-in-out;
         transform: rotate(360deg);
         height: auto;
     
@@ -28,12 +28,12 @@
             a {
                 margin: 0 auto;
                 padding: 0 0 1.5rem 0 ;
-                width: 50%;
+                // width: 50%;
             }
             
             img {
                 transform: rotate(900deg);
-                transition: all 300ms ease-in-out;
+                transition: all 100ms ease-in-out;
                 width: 5rem;
                 margin: 0 auto;
                 padding-top: $size-navbar-height/2;
@@ -54,11 +54,11 @@
     }
     &__menu {
        
-        @include CSHamburgerMenu (map-get($map: $brand-clr, $key: light), 300ms );
+        @include CSHamburgerMenu (map-get($map: $brand-clr, $key: light), 100ms );
         z-index: 1;
         &.open {
             > * {
-                transition: all 300ms ease-in-out;
+                transition: all 100ms ease-in-out;
             }
             > span:first-child {
                 transform: rotate(-90deg);

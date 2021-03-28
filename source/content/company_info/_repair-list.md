@@ -1,5 +1,5 @@
-- drain & sewer
-- bathroom plumbing
-- kitchen plumbing
+- drain & sewer  
+- bathroom plumbing  
+- kitchen plumbing  
 - main water lines
-- grease traps
+- grease <!-- $phone --> traps  
