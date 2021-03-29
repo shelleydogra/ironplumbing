@@ -237,13 +237,6 @@ p {
   font-weight: 300;
 }
 
-.button {
-  background-color: #af1a1a;
-  color: #e8e9eb;
-  font-size: 1.125rem;
-  padding: 0.5rem 1.3rem;
-}
-
 @keyframes scale-up-from-top {
   0% {
     transform: scale(0.1);
@@ -347,8 +340,22 @@ p {
 .nav__links a:hover {
   color: #af1a1a;
 }
-.nav__cta-button a, .nav__cta-button a:visited, .nav__cta-button a:hover {
+.nav__cta-button {
+  background-color: #af1a1a;
+  transition: all 0.5s ease;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.3rem;
+}
+.nav__cta-button a {
   color: #e8e9eb;
+  transition: color 0.5s ease;
+}
+.nav__cta-button:hover {
+  background-color: #e8e9eb;
+  transition: all 0.5s ease;
+}
+.nav__cta-button:hover a {
+  color: #af1a1a;
 }
 
 .footer {

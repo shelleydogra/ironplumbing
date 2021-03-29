@@ -88,9 +88,9 @@
     }
 
     &__cta-button {
-        a, a:visited, a:hover {
-         color: map-get($map: $brand-clr, $key: light);
-        }
+        @include button(map-get($map: $brand-clr, $key: red), map-get($map: $brand-clr, $key: light));
+        font-size: 1.125rem;
+        padding: .5rem 1.3rem;
     }
 }
 

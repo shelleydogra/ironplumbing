@@ -1,6 +1,22 @@
-.button {
-    background-color: map-get($map: $brand-clr, $key: red);
-    color: map-get($map: $brand-clr, $key: light);
-    font-size: 1.125rem;
-    padding: .5rem 1.3rem;
+// .button {
+//     background-color: map-get($map: $brand-clr, $key: red);
+//     a {color: map-get($map: $brand-clr, $key: light);transition: color $transition-delay ease;} 
+//     transition: background-color $transition-delay ease;
+
+//     &:hover {
+//         background-color: map-get($map: $brand-clr, $key: light);
+//         a {color: map-get($map: $brand-clr, $key: red); }
+//         transition: all $transition-delay ease
+//     }
+// }
+
+@mixin button($color-1, $color-2) {
+    background-color: $color-1;
+    a{color: $color-2; transition: color $transition-delay ease;}
+    transition: all $transition-delay ease;
+    &:hover {
+        background-color: $color-2;
+        a{color: $color-1;}
+        transition: all $transition-delay ease;
+    }
 }

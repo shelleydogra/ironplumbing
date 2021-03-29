@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var phone = document.querySelectorAll('.wrapper #phone');
 
     for (let i = 0; i < phone.length; i++) {
-        phone[i].innerHTML = data[0].info.phone;
+        phone[i].innerHTML = formatPhoneNumber(data[0].info.phone);
     }
 
     //tel link
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
 let formatPhoneNumber = (str) => {
     //Filter only numbers from the input
     let cleaned = ('' + str).replace(/\D/g, '');
-    console.log(cleaned);
+    
     //Check if the input is of correct
     let match = cleaned.match(/^(1|)?(\d{3})(\d{3})(\d{4})$/);
-    console.log(match);
+    
     if (match) {
 
-      let intlCode = (match[1] ? '+1 ' : '')
+    //   let intlCode = (match[1] ? '+1 ' : '')
       return ['(', match[2], ') ', match[3], '-', match[4]].join('')
     }
     
@@ -81,10 +81,10 @@ let formatPhoneNumber = (str) => {
   let cleanPhoneNumber = (str) => {
     //Filter only numbers from the input
     let cleaned = ('' + str).replace(/\D/g, '');
-    console.log(cleaned);
+    
     //Check if the input is of correct
     let match = cleaned.match(/^(1|)?(\d{3})(\d{3})(\d{4})$/);
-    console.log(match);
+    
     if (match) {
 
       let intlCode = (match[1] ? '+1' : '')
