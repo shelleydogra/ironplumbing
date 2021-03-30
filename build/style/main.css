@@ -482,12 +482,11 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 0.25fr 1fr 1fr;
-  grid-template-areas: "nav" "heading" "." "sub-heading" "space";
+  grid-template-areas: "nav" "heading" "." "sub-heading" "btn";
   align-items: center;
   color: #fff;
   overflow: hidden;
   position: relative;
-  z-index: -1;
 }
 .home__hero--heading {
   grid-area: heading;
@@ -518,6 +517,26 @@ p {
   -webkit-backdrop-filter: blur(13px);
   border-radius: 13px;
   padding: 1vh;
+}
+.home__hero--btn {
+  grid-area: btn;
+  background-color: #af1a1a;
+  transition: all 0.5s ease;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.3rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+.home__hero--btn a {
+  color: #e8e9eb;
+  transition: color 0.5s ease;
+}
+.home__hero--btn:hover {
+  background-color: #e8e9eb;
+  transition: all 0.5s ease;
+}
+.home__hero--btn:hover a {
+  color: #af1a1a;
 }
 .home__hero::before {
   position: absolute;

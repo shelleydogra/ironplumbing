@@ -11,7 +11,7 @@
         "heading"
         "."
         "sub-heading"
-        "space"
+        "btn"
     ;
 
     //spacing
@@ -24,7 +24,7 @@
     position: relative;
 
     // transform: translateY(-$size-nav-height);
-    z-index: -1;
+    // z-index: -1;
 
 
     &--heading {
@@ -51,6 +51,15 @@
         @include CSGlass-light;
         border-radius: 13px;
         padding: 1vh;
+    }
+
+    &--btn {
+        grid-area: btn;
+        @include button(map-get($map: $brand-clr, $key: red), map-get($map: $brand-clr, $key: light));
+        font-size: 1.125rem;
+        padding: .5rem 1.3rem;
+        margin: 0 auto;
+        z-index: 1;
     }
 
     &::before {
