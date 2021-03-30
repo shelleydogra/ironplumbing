@@ -1,10 +1,10 @@
 .contact__hero {
     min-height: 75vh;
     @include CSBefore ('../images/faucet-drip.png');
+    // z-index: -2;
     &::before { //mixin override
         top: 5rem;
         left: -45rem;
-        
     }
 
     text-align: center;
@@ -21,7 +21,6 @@
         flex-direction: column;
         padding: .5rem;
         color: map-get($map: $brand-clr, $key: light);
-        
         > * { //spacing
             padding-bottom: 1.25rem;
             &:last-child {

@@ -272,6 +272,7 @@ p {
   transition: all 100ms ease-in-out;
   transform: rotate(360deg);
   height: auto;
+  z-index: 1;
 }
 .nav .overlay__links {
   display: flex;
@@ -305,7 +306,7 @@ p {
   max-width: 18rem;
 }
 .nav__menu {
-  z-index: 1;
+  z-index: 2;
 }
 .nav__menu > span {
   display: block;
@@ -525,7 +526,6 @@ p {
   font-size: 1.125rem;
   padding: 0.5rem 1.3rem;
   margin: 0 auto;
-  z-index: 1;
 }
 .home__hero--btn a {
   color: #e8e9eb;

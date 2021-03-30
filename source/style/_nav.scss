@@ -17,6 +17,7 @@
         transition: all 100ms ease-in-out;
         transform: rotate(360deg);
         height: auto;
+        z-index: 1;
     
         &__links {
             @include links-style();
@@ -55,7 +56,7 @@
     &__menu {
        
         @include CSHamburgerMenu (map-get($map: $brand-clr, $key: light), 100ms );
-        z-index: 1;
+        z-index: 2;
         &.open {
             > * {
                 transition: all 100ms ease-in-out;
