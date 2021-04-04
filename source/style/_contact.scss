@@ -1,16 +1,14 @@
-.contact__hero {
-    min-height: 75vh;
+.hero {
+    min-height: 55vh;
     @include CSBefore ('../images/faucet-drip.png');
     // z-index: -2;
     &::before { //mixin override
-        top: 5rem;
         left: -45rem;
     }
-
+    overflow: hidden;
     text-align: center;
     display: flex;
     justify-content: center;
-    
 
     &--cta {
         @include CSGlass-dark();

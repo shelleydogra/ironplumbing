@@ -452,6 +452,7 @@ p {
   text-align: center;
   padding: 2rem 0;
   position: relative;
+  position: relative;
   background-color: rgba(20, 70, 160, 0.85);
   color: #e8e9eb;
 }
@@ -722,13 +723,15 @@ p {
   color: #c13584;
 }
 
-.contact__hero {
-  min-height: 75vh;
+.hero {
+  min-height: 55vh;
+  position: relative;
+  overflow: hidden;
   text-align: center;
   display: flex;
   justify-content: center;
 }
-.contact__hero::before {
+.hero::before {
   position: absolute;
   content: " ";
   top: 0;
@@ -739,11 +742,10 @@ p {
   background-size: cover;
   z-index: -1;
 }
-.contact__hero::before {
-  top: 5rem;
+.hero::before {
   left: -45rem;
 }
-.contact__hero--cta {
+.hero--cta {
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(21px);
@@ -756,10 +758,10 @@ p {
   padding: 0.5rem;
   color: #e8e9eb;
 }
-.contact__hero--cta > * {
+.hero--cta > * {
   padding-bottom: 1.25rem;
 }
-.contact__hero--cta > *:last-child {
+.hero--cta > *:last-child {
   padding-bottom: 0;
 }
 
