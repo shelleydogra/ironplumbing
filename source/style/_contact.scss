@@ -1,6 +1,6 @@
 .hero {
     min-height: 55vh;
-    @include CSBefore ('../images/faucet-drip.png');
+    @include CSBeforeUrl ('../images/faucet-drip.png');
     // z-index: -2;
     &::before { //mixin override
         left: -45rem;
@@ -8,12 +8,13 @@
     overflow: hidden;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
-    &--cta {
+    &__cta {
         @include CSGlass-dark();
         border-radius: 13px;
-        margin: 7rem auto;
+        margin: 3rem auto;
         height: max-content;
         display: flex;
         flex-direction: column;
@@ -25,5 +26,10 @@
                 padding-bottom: 0;
             }
         }
+    }
+
+    &__btn {
+        @include button(map-get($map: $brand-clr, $key: red), map-get($map: $brand-clr, $key: light));
+        @include button-dimensions;
     }
 }

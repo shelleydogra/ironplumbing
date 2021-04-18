@@ -184,7 +184,7 @@ a, a:visited, a:hover {
 button, .button {
   padding: 1rem 1.875rem;
   border-radius: 50px;
-  background-color: red;
+  background-color: #3328d4;
   border: none;
   cursor: pointer;
 }
@@ -218,17 +218,31 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel", serif;
 }
 
-h1, h2 {
+h1 {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-h3, h4 {
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h3 {
   font-size: 0.75em;
   font-weight: 400;
 }
 
-h5, h6 {
+h4 {
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 0.5em;
+}
+
+h6 {
   font-size: 0.5em;
 }
 
@@ -723,12 +737,139 @@ p {
   color: #c13584;
 }
 
+.services {
+  display: flex;
+}
+.services__header {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(100px, auto-fit));
+  color: #e8e9eb;
+  grid-template-areas: "title" "pic1";
+}
+.services__header::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
+.services__header::before {
+  background: rgba(0, 0, 0, 0.678);
+  z-index: 2;
+}
+.services__header img {
+  width: 100%;
+}
+.services__header--title {
+  grid-area: title;
+  padding: 2rem 0;
+  font-size: larger;
+  background-color: #1446a0;
+  z-index: 2;
+}
+.services__header--pic1 {
+  grid-area: pic1;
+}
+.services__header--list {
+  z-index: 2;
+  grid-area: pic1;
+  place-self: center;
+}
+.services__header--list > * {
+  padding: 2rem;
+}
+.services__description {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 1rem 0;
+}
+.services__description > :last-child {
+  padding: 3rem 0;
+}
+.services__description--title {
+  background: #009ddc;
+  color: #e8e9eb;
+  padding: 1.25rem 0;
+}
+.services__provided * > ::marker {
+  content: "✓";
+  font-size: 1.4rem;
+}
+.services__provided > * {
+  padding: 2rem 0;
+  color: #e8e9eb;
+  position: relative;
+}
+.services__provided > * .heading {
+  color: #009ddc;
+}
+.services__provided > *::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
+.services__provided > *::after {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.services__provided--plumbing {
+  position: relative;
+}
+.services__provided--plumbing::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/ip-job-12.jpg") no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.services__provided--installations {
+  position: relative;
+}
+.services__provided--installations::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/ip-job-2.jpg") no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.services__provided--repairs {
+  position: relative;
+}
+.services__provided--repairs::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/ip-job-3.jpg") no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 .hero {
   min-height: 55vh;
   position: relative;
   overflow: hidden;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .hero::before {
@@ -745,24 +886,42 @@ p {
 .hero::before {
   left: -45rem;
 }
-.hero--cta {
+.hero__cta {
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(21px);
   -webkit-backdrop-filter: blur(21px);
   border-radius: 13px;
-  margin: 7rem auto;
+  margin: 3rem auto;
   height: max-content;
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
   color: #e8e9eb;
 }
-.hero--cta > * {
+.hero__cta > * {
   padding-bottom: 1.25rem;
 }
-.hero--cta > *:last-child {
+.hero__cta > *:last-child {
   padding-bottom: 0;
+}
+.hero__btn {
+  background-color: #af1a1a;
+  transition: all 0.5s ease;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.3rem;
+  margin: 0 auto;
+}
+.hero__btn a {
+  color: #e8e9eb;
+  transition: color 0.5s ease;
+}
+.hero__btn:hover {
+  background-color: #e8e9eb;
+  transition: all 0.5s ease;
+}
+.hero__btn:hover a {
+  color: #af1a1a;
 }
 
 .wrapper {

@@ -8,7 +8,7 @@
     text-align: center;
     padding: 2rem 0;
     position: relative;
-    @include CSBefore ("../images/pipes.png");
+    @include CSBeforeUrl ("../images/pipes.png");
 
 
     background-color: rgba(map-get($map: $brand-clr, $key: blue), .85);

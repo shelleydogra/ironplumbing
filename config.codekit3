@@ -7,7 +7,7 @@
       "uuidString" : "E74B625D-3669-45C1-95D0-3D0D934F5336"
     }
   ],
-  "creatorBuild" : "34018",
+  "creatorBuild" : "34127",
   "files" : {
     "\/build" : {
       "ft" : 65536,
@@ -381,6 +381,123 @@
       "iS" : 970269,
       "oA" : 0,
       "oAP" : "\/build\/images\/faucet-drip.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-1.jpeg" : {
+      "ft" : 16384,
+      "iS" : 565287,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-1.png" : {
+      "ft" : 32768,
+      "iS" : 263211,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-2.jpeg" : {
+      "ft" : 16384,
+      "iS" : 515044,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-3.jpeg" : {
+      "ft" : 16384,
+      "iS" : 583279,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-5.jpeg" : {
+      "ft" : 16384,
+      "iS" : 553214,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-5.jpg",
+      "oF" : 1,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-5.png" : {
+      "ft" : 32768,
+      "iS" : 118061,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-5.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-12.jpeg" : {
+      "ft" : 16384,
+      "iS" : 489535,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-12.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-14.jpeg" : {
+      "ft" : 16384,
+      "iS" : 231293,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-14.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/ip-job-14.png" : {
+      "ft" : 32768,
+      "iS" : 112010,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ip-job-14.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
@@ -773,7 +890,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 639231209.40879202
+    "lastBuiltDate" : 639782644.091277
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -2805,27 +2922,30 @@
 
       ],
       "contentEntries" : [
-        "!(node_modules)\/**\/*.html",
-        "!(node_modules)\/**\/*.htm",
-        "!(node_modules)\/**\/*.shtml",
-        "!(node_modules)\/**\/*.xhtml",
-        "!(node_modules)\/**\/*.php",
-        "!(node_modules)\/**\/*.js",
-        "!(node_modules)\/**\/*.ts",
-        "!(node_modules)\/**\/*.coffee",
-        "!(node_modules)\/**\/*.erb",
-        "!(node_modules)\/**\/*.pug",
-        "!(node_modules)\/**\/*.jade",
-        "!(node_modules)\/**\/*.slim",
-        "!(node_modules)\/**\/*.haml",
-        "!(node_modules)\/**\/*.md",
-        "!(node_modules)\/**\/*.kit"
+        "**\/*.html",
+        "**\/*.htm",
+        "**\/*.shtml",
+        "**\/*.xhtml",
+        "**\/*.php",
+        "**\/*.js",
+        "**\/*.ts",
+        "**\/*.coffee",
+        "**\/*.erb",
+        "**\/*.pug",
+        "**\/*.jade",
+        "**\/*.slim",
+        "**\/*.haml",
+        "**\/*.md",
+        "**\/*.kit"
       ],
       "removeFontFace" : 1,
       "removeKeyframes" : 1,
       "removeVariables" : 1,
       "safelistEntries" : [
 
+      ],
+      "skippedEntries" : [
+        "node_modules\/**"
       ]
     },
     "rollupContext" : "",
@@ -2860,6 +2980,7 @@
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
+    "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
     "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,
