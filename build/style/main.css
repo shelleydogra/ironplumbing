@@ -742,13 +742,44 @@ p {
 }
 .services__header {
   display: grid;
-  position: relative;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fit, minmax(100px, auto-fit));
   color: #e8e9eb;
-  grid-template-areas: "title" "pic1";
+  grid-template-areas: "title" "list";
 }
-.services__header::before {
+.services__header--title {
+  grid-area: title;
+  margin: 3rem auto;
+  border-radius: 13px;
+  padding: 2rem 5rem;
+  font-size: larger;
+  background-color: #1446a0;
+  z-index: 2;
+  place-self: center;
+}
+.services__header--list {
+  grid-area: list;
+  position: relative;
+  position: relative;
+}
+.services__header--list > * {
+  padding: 2.5rem;
+}
+.services__header--list::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/ip-job-1.jpg") no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.services__header--list::before {
+  z-index: -2;
+}
+.services__header--list::after {
   position: absolute;
   content: " ";
   top: 0;
@@ -757,30 +788,9 @@ p {
   bottom: 0;
   background-size: cover;
 }
-.services__header::before {
-  background: rgba(0, 0, 0, 0.678);
-  z-index: 2;
-}
-.services__header img {
-  width: 100%;
-}
-.services__header--title {
-  grid-area: title;
-  padding: 2rem 0;
-  font-size: larger;
-  background-color: #1446a0;
-  z-index: 2;
-}
-.services__header--pic1 {
-  grid-area: pic1;
-}
-.services__header--list {
-  z-index: 2;
-  grid-area: pic1;
-  place-self: center;
-}
-.services__header--list > * {
-  padding: 2rem;
+.services__header--list::after {
+  background: rgba(0, 0, 0, 0.65);
+  z-index: -1;
 }
 .services__description {
   display: flex;
@@ -791,16 +801,23 @@ p {
   padding: 3rem 0;
 }
 .services__description--title {
+  place-self: center;
+  margin: 2rem auto 0;
+  border-radius: 13px;
+  padding: 1.5rem 2.5rem;
+  max-width: 90vw;
+  font-size: larger;
   background: #009ddc;
   color: #e8e9eb;
-  padding: 1.25rem 0;
 }
 .services__provided * > ::marker {
   content: "✓";
   font-size: 1.4rem;
 }
 .services__provided > * {
-  padding: 2rem 0;
+  margin: 0 auto 2rem;
+  max-width: 90vw;
+  padding: 2rem 0.3rem;
   color: #e8e9eb;
   position: relative;
 }
@@ -861,6 +878,33 @@ p {
   background: url("../images/ip-job-3.jpg") no-repeat;
   background-size: cover;
   z-index: -1;
+}
+
+.servicescta {
+  display: flex;
+  flex-direction: column;
+}
+.servicescta > * {
+  padding: 2rem 0;
+}
+.servicescta__title {
+  align-self: center;
+}
+.servicescta__info {
+  text-align: center;
+}
+.servicescta__info--phone {
+  padding-bottom: 2rem;
+}
+.servicescta__info--phone a {
+  color: #170f11;
+}
+.servicescta__info--social {
+  display: flex;
+  justify-content: space-evenly;
+}
+.servicescta__form {
+  border: 5px solid #1446a0;
 }
 
 .hero {
