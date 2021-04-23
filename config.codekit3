@@ -327,6 +327,19 @@
       "oAP" : "\/build\/site.webmanifest",
       "oF" : 2
     },
+    "\/source\/images\/dogra-portrait.png" : {
+      "ft" : 32768,
+      "iS" : 17245,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/dogra-portrait.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/drop-blue-solid.png" : {
       "ft" : 32768,
       "iS" : 787,
@@ -475,7 +488,7 @@
       "oAP" : "\/build\/images\/ip-job-12.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -890,7 +903,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 639782644.091277
+    "lastBuiltDate" : 640892560.96158099
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
