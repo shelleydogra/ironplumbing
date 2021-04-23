@@ -47,7 +47,9 @@ let data = [{
     },
     "info": {
         "phone": "+1(630)776-1907",
-        "email": "plumber@ironplumber.net"
+        "email": "plumber@ironplumber.net",
+        "license": "055-044643",
+        "stateSite": "https://plumblicv5pub.dph.illinois.gov/Clients/ILDOHPlumb/Public/Verification/PLUMBER_LICENSE_DETAILS.ASPX?ENTITYID=1524032,%20@I_LICENSEPK=256509"
     }
    
 }
@@ -76,6 +78,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var emailLink = document.querySelectorAll('.wrapper #email-link');
     for (let i = 0; i < emailLink.length; i++) {
         emailLink[i].innerHTML = '<a href=mailto:"'+ data[0].info.email +'">'+ "Email Us" + '</a> ';
+    }
+
+    var licenseNumber = document.querySelectorAll('.wrapper #license-number');
+    for (let i = 0; i < licenseNumber.length; i++) {
+        // licenseNumber[i].innerHTML = data[0].info.license;
+        licenseNumber[i].innerHTML = '<a href="'+ data[0].info.stateSite + '">' + data[0].info.license + '</a>';
     }
 
 });
