@@ -655,9 +655,9 @@
       "rq" : 75
     },
     "\/source\/index.kit" : {
-      "cB" : 1,
+      "cB" : 0,
       "ft" : 2048,
-      "hM" : 2,
+      "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/index.html",
       "oF" : 0
@@ -903,7 +903,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 640892560.96158099
+    "lastBuiltDate" : 643934357.83352005
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
