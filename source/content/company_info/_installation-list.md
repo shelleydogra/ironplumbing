@@ -1,5 +1,5 @@
 - toilet installation
-- ejector pumbs
+- ejector pumps
 - drain cleaning
 - Gas Piping
 - water heaters

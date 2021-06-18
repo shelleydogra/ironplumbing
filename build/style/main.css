@@ -607,6 +607,7 @@ p {
   --card-top-height: calc(var(--card-height) * 0.382);
   --card-bottom-height: calc(var(--card-height) * 0.618);
   position: relative;
+  transition: box-shadow ease-in-out 200ms;
   display: grid;
   grid-template-rows: calc(var(--card-top-height) * .30) calc(var(--card-top-height) * .15) calc(var(--card-top-height) * .55) var(--card-bottom-height);
   grid-template-columns: 1fr;
@@ -614,7 +615,6 @@ p {
   align-items: center;
   justify-items: center;
   text-align: center;
-  z-index: -3;
   margin: 2rem 0;
 }
 .services__service--card::after {
@@ -649,6 +649,12 @@ p {
 .services__service--card::after {
   background-color: #1446a0;
   z-index: -2;
+}
+.services__service--card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 13px 1px rgba(0, 0, 0, 0.55);
+  box-shadow: 5px 5px 13px 1px rgba(0, 157, 220, 0.85);
+  transition: box-shadow ease-in-out 0.5s;
 }
 .services__service--card-heading {
   grid-area: heading;

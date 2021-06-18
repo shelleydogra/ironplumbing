@@ -615,6 +615,29 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/sink-wash.png" : {
+      "ft" : 32768,
+      "iS" : 667,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sink-wash.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/sink-wash.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sink-wash.svg",
+      "oF" : 0,
+      "opt" : 1,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/water-drop.png" : {
       "ft" : 32768,
       "iS" : 1231245,
@@ -903,7 +926,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 643934357.83352005
+    "lastBuiltDate" : 644270228.18652296
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

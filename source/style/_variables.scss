@@ -19,6 +19,17 @@ $brand-clr: (
 );
 
 
+@function get-color( $palette, $color, $opacity: 1 ) {
+	
+	
+	@if map-has-key( $palette, $color ) {
+		@return transparentize( map-get( $palette, $color ), 1 - $opacity );
+	}
+
+	@error "color #{$color} is not in the map #{$palette}";
+	@return #f0f;
+
+}
 
 // Font Sizes
 $font-sm: 0.875rem; //14px
