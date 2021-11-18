@@ -9,85 +9,155 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/.gitignore",
+      "oF" : 1
+    },
     "\/build" : {
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/build\/build",
       "oF" : 0
     },
-    "\/README.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/build\/README.html",
+    "\/gulpfile.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/build\/gulpfile.js",
+      "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/build\/node_modules",
+      "oF" : 0
+    },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/build\/package-lock.json",
       "oF" : 0,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/build\/package.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/source\/404.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 2,
+      "oA" : 0,
+      "oAP" : "\/build\/404.html",
+      "oF" : 0
     },
     "\/source\/contact.kit" : {
       "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 0,
       "oAP" : "\/build\/contact.html",
       "oF" : 0
     },
-    "\/source\/content\/_cta.kit" : {
-      "cB" : 0,
+    "\/source\/content\/_body.kit" : {
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
+      "oA" : 1,
+      "oAP" : "\/build\/content\/_body.html",
+      "oF" : 0
+    },
+    "\/source\/content\/_cta.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 2,
       "oA" : 1,
       "oAP" : "\/build\/content\/_cta.html",
       "oF" : 0
     },
     "\/source\/content\/_favicon.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 1,
       "oAP" : "\/build\/content\/_favicon.html",
       "oF" : 0
     },
     "\/source\/content\/_footer.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 1,
       "oAP" : "\/build\/content\/_footer.html",
       "oF" : 0
     },
     "\/source\/content\/_head.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 1,
       "oAP" : "\/build\/content\/_head.html",
       "oF" : 0
     },
     "\/source\/content\/_links.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 1,
       "oAP" : "\/build\/content\/_links.html",
       "oF" : 0
     },
     "\/source\/content\/_nav.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 1,
       "oAP" : "\/build\/content\/_nav.html",
+      "oF" : 0
+    },
+    "\/source\/content\/_seo\/_google_analytics.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 2,
+      "oA" : 1,
+      "oAP" : "\/build\/content\/_seo\/_google_analytics.html",
+      "oF" : 0
+    },
+    "\/source\/content\/_seo\/_google_tag_body.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 2,
+      "oA" : 1,
+      "oAP" : "\/build\/content\/_seo\/_google_tag_body.html",
+      "oF" : 0
+    },
+    "\/source\/content\/_seo\/_google_tag_head.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 2,
+      "oA" : 1,
+      "oAP" : "\/build\/content\/_seo\/_google_tag_head.html",
+      "oF" : 0
+    },
+    "\/source\/content\/.htaccess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/content\/.htaccess",
       "oF" : 0
     },
     "\/source\/content\/company_info\/_general-plumbing-list.md" : {
@@ -156,9 +226,9 @@
       "uCM" : 0
     },
     "\/source\/content\/company_info\/_variables.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 1,
       "oAP" : "\/build\/content\/company_info\/_variables.html",
       "oF" : 0
@@ -678,9 +748,9 @@
       "rq" : 75
     },
     "\/source\/index.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 0,
       "oAP" : "\/build\/index.html",
       "oF" : 0
@@ -707,18 +777,18 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/source\/not-found-page.kit" : {
+    "\/source\/robots.txt" : {
       "cB" : 0,
-      "ft" : 2048,
+      "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/build\/not-found-page.html",
-      "oF" : 0
+      "oA" : 2,
+      "oAP" : "\/build\/robots.txt",
+      "oF" : 1
     },
     "\/source\/services.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 0,
       "oAP" : "\/build\/services.html",
       "oF" : 0
@@ -891,6 +961,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/source\/style\/404.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/style\/404.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/source\/style\/main.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -926,7 +1010,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 645668790.91687596
+    "lastBuiltDate" : 647235034.94488096
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1220,7 +1304,7 @@
     "bowerUseExactVersion" : 0,
     "browserRefreshDelay" : 0,
     "browserslistString" : ">0.2%, last 2 versions, Firefox ESR, not dead",
-    "buildEnvironment" : 0,
+    "buildEnvironment" : 1,
     "buildFolderActive" : 1,
     "buildFolderName" : "build",
     "cleanBuild" : 1,
@@ -1365,7 +1449,7 @@
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
-      "NODE_ENV:::production"
+      "NODE_ENV:::development"
     ],
     "esLintConfigFileHandlingType" : 0,
     "esLintECMAVersion" : 7,
@@ -2791,8 +2875,8 @@
       "autoOutputPathReplace1" : "kit",
       "autoOutputPathReplace2" : "html",
       "autoOutputPathStyle" : 0,
-      "htmlMinifierStyle" : 0,
-      "shouldRunCacheBuster" : 0
+      "htmlMinifierStyle" : 2,
+      "shouldRunCacheBuster" : 1
     },
     "languageDefaultsLESS" : {
       "allowInsecureImports" : 0,
@@ -2950,7 +3034,7 @@
     "npmCreatePackageLock" : 1,
     "npmInstallOptionalDependencies" : 0,
     "npmSaveExactVersion" : 0,
-    "npmTargetDependencyListType" : 1,
+    "npmTargetDependencyListType" : 2,
     "overrideExternalServerCSS" : 0,
     "previewPathAddition" : "\/build",
     "purgeCSS" : {
@@ -2993,7 +3077,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
+    "skippedFoldersString" : "\/storage\/framework\/sessions,node_modules,_logs,logs,log,.idea,_cache,cache,..\/node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,

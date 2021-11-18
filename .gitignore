@@ -1,0 +1,9 @@
+config.codekit3
+README.md
+.codekit-cache/
+build/
+test.md
+package.json
+node_modules/
+gulpfile.js
+package-lock.json

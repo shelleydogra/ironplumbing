@@ -974,6 +974,16 @@ p {
   color: #af1a1a;
 }
 
+.error404__page--msg {
+  padding: 150px 20px 150px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error404__page--msg a {
+  color: #1446a0;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
